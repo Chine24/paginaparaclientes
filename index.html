@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Requisitos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido al Formulario de Requisitos para Crear tu Página Web</h1>
+        <form id="formularioRequisitos">
+            <!-- Preguntas y campos del formulario -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="tipoSitio">Tipo de Sitio Web:</label>
+            <select id="tipoSitio" required>
+                <option value="personal">Personal</option>
+                <option value="negocio">Negocio</option>
+                <option value="blog">Blog</option>
+                <option value="blog">Tienda Online</option>
+            </select>
+
+            <label for="funcionalidades">Funcionalidades Deseadas:</label>
+            <textarea id="funcionalidades" rows="4" required></textarea>
+
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

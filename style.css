@@ -1,0 +1,82 @@
+body {
+    background-image: url("img.jpg");
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el body */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+}
+
+.container {
+    
+    max-width: 600px;
+    margin: 50px auto;
+    /*background-color: rgba(00, 30, 49);  Fondo semi-transparente blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s; /* Animación de entrada */
+}
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    margin-bottom: 30px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+
+
+textarea {
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px; /* Establecer una altura máxima */
+    resize: vertical; /* Permitir solo la redimensión vertical */
+    overflow-y: auto; /* Agregar una barra de desplazamiento vertical si es necesario */
+}
+
+button {
+    padding: 10px;
+    background-color: #4a534a98;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
